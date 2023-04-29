@@ -20,12 +20,13 @@ routes.use(bodyParser.json());
 const PORT = 3000;
 
 routes.get('/', (req, res)=>{
-    res.status(200).send("Welcome to the airtribe course rating app");
+    res.status(200).send("Welcome to the news Aggregator app");
   });
   
 // routes.use('/courses', courseInfo);
 routes.post('/register', signup);
 routes.post('/signin', signin);
+
 
 app.listen(process.env.PORT || PORT, (error) =>{
     if(!error)
